@@ -1,0 +1,46 @@
+.flag-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.flag {
+    position: relative;
+    height: 220px;
+    width: 100px;
+    color: brown;
+    animation: flutter 2s infinite;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.upper {
+    border-width: 0 50px 86.6px 50px;
+    border-color: transparent transparent crimson transparent;
+}
+
+.lower {
+    border-width: 86.6px 50px 0 50px;
+    border-color: crimson transparent transparent transparent;
+    top: 40px;
+}
+
+@keyframes flutter {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(2deg);
+    }
+}

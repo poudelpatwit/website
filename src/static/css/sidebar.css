@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+body {
+    font-family: "Merriweather";
+}
+
+.MuiListItemButton-root {
+    font-size: 3em;
+    align-items: center;
+}
+
+.appBar {
+    font-family: "Merriweather";
+
+}
+
+.div-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.name {
+    align-items: flex-start;
+    font-family: "Merriweather";
+}
+
+.profile-photo {
+    display: flex;
+    align-items: flex-end;
+}
+
+.sidebar-item {
+    font-family: 'Merriweather' !important;
+    font-size: 25px !important;
+    margin-left: 10px !important;
+}
+
+.sidebar-items {
+    font-size: 5em;
+}
+
+.sidebar {
+    height: 10vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    padding-top: 20px;
+}
+
+.sidebar h2 {
+    color: white;
+    padding: 6px 16px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 8px 16px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+.profile-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-pic {
+    width: 80px !important;
+    height: 80px !important;
+    border-radius: 50%;
+    object-fit: cover;
+}

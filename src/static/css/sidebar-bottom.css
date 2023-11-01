@@ -1,0 +1,63 @@
+.sidebar-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.profile-picture-container {
+    margin-bottom: 10px;
+}
+
+.profile-picture {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.text-container {
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.personal-name {
+    font-size: 1.5em !important;
+    font-weight: 500;
+}
+
+
+
+.social-media-icons {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.social-media-icon {
+    padding: 10px;
+    border: 3px solid #2C3E50;
+    font-size: 70px;
+    color: #2C3E50;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.sidebar-footer {
+    font-size: 5px !important;
+    text-align: center;
+}
+
+.copy-right {
+    margin-top: 4em;
+    font-size: 15px;
+}

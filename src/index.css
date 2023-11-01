@@ -6,9 +6,23 @@ body {
   font-family: 'Merriweather', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fff0db;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* 
+.App {
+  display: flex;
+} */
+
+/* .App-header {
+  width: 75%;
+} */
+
+/* .Sidebar {
+  width: 25%;
+} */
