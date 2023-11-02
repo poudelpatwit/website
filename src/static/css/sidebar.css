@@ -2,16 +2,28 @@
 
 body {
     font-family: "Merriweather";
+    text-decoration: none !important;
 }
 
-.MuiListItemButton-root {
-    font-size: 3em;
-    align-items: center;
+p {
+    font-family: "Merriweather";
+    font-size: 1em !important;
+    margin-left: 15px !important;
 }
 
 .appBar {
     font-family: "Merriweather";
+    background-color: #2C3E50 !important;
+}
 
+.toolbar {
+    font: 'Merriweather';
+    margin: 8px;
+    font-size: 20px;
+    background-color: #2C3E50;
+    color: #D3D3D3;
+    padding-left: 0;
+    padding-right: 0 !important;
 }
 
 .div-name {
@@ -24,11 +36,14 @@ body {
 .name {
     align-items: flex-start;
     font-family: "Merriweather";
+    color: #fff;
+    padding-left: 8px;
 }
 
 .profile-photo {
     display: flex;
     align-items: flex-end;
+    margin-right: 5px;
 }
 
 .sidebar-item {
@@ -43,7 +58,8 @@ body {
 
 .sidebar {
     height: 10vh;
-    width: 250px;
+    min-width: 250px;
+    max-width: 250px;
     position: fixed;
     top: 0;
     left: 0;

@@ -2,11 +2,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
-}
-
-.profile-picture-container {
-    margin-bottom: 10px;
+    justify-content: center;
+    text-align: center;
+    max-width: 300px;
+    min-width: 100%;
 }
 
 .profile-picture {
@@ -17,47 +16,56 @@
 }
 
 .text-container {
+    padding: 10px;
     text-align: center;
 }
 
 p {
-    font-size: 20px;
+    font-size: 20px !important;
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+.sidebar-about {
+    font-size: 0.55em !important;
 }
 
 .personal-name {
     font-size: 1.5em !important;
     font-weight: 500;
+    margin-top: none !important;
 }
-
-
 
 .social-media-icons {
-    width: 100%;
+    width: 90%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
-.social-media-icon {
+.social-media-ico {
     padding: 10px;
     border: 3px solid #2C3E50;
-    font-size: 70px;
+    font-size: 60px;
     color: #2C3E50;
-    border-radius: 50%;
+    border-radius: 20%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
-.sidebar-footer {
-    font-size: 5px !important;
+.sidebar-footer-bottom {
+    bottom: 0;
+    position: absolute;
+    padding: 10px 0;
+    border-top: 1px solid #ffffff;
+    width: 100%;
     text-align: center;
+    background-color: #2C3E50;
+    color: #fff
 }
 
-.copy-right {
-    margin-top: 4em;
-    font-size: 15px;
+.sidebar-footer-bottom-copyright {
+    font-size: 12px !important;
 }

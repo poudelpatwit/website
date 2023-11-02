@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Drawer, List, ListItem, ListItemText, IconButton, AppBar, Toolbar, Typography } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import { Link } from 'react-router-dom';
 import '../../static/css/sidebar.css'
 import SidebarBottom from './sidebar-bottom';
 
@@ -16,7 +17,7 @@ function Sidebar() {
         <div style={{ width: 550 }} role="presentation" onClick={toggleDrawer} onKeyDown={toggleDrawer}>
             <List>
                 {['Home', 'About', 'Resume', 'Contact'].map((text) => (
-                    <ListItem button key={text}>
+                    <ListItem button key={text} component={Link} to={`/${text.toLowerCase()}`}>
                         <ListItemText>
                             <Typography className="sidebar-item">
                                 {text}
@@ -30,15 +31,13 @@ function Sidebar() {
 
     return (
         <div>
-            <AppBar position="static" sx={{ height: 90, fontSize: 20, backgroundColor: '#2F4F4F' }}>
-                <Toolbar sx={{
-                    font: 'Merriweather', margin: 2, fontSize: 20, backgroundColor: '#2F4F4F', color: '#D3D3D3'
-                }} >
-                    < IconButton edge="start" color="inherit" aria- label="menu" size="large" onClick={toggleDrawer}>
-                        <MenuIcon sx={{ fontSize: 50 }} />
+            <AppBar position="static" sx={{ height: 90, fontSize: 20, backgroundColor: '#2C3E50' }}>
+                <Toolbar className='toolbar'>
+                    <IconButton sx={{ paddingLeft: '0' }} edge="start" color="inherit" aria- label="menu" size="large" onClick={toggleDrawer}>
+                        <MenuIcon sx={{ fontSize: 50, color: '#fff', paddingLeft: '0' }} />
                     </IconButton>
                     <div className="div-name">
-                        <Typography variant="h3" className='name'>Inusha Pandey</Typography>
+                        <Typography variant="h4"><span className='name'>Inusha Pandey</span></Typography>
                         <div className='profile-photo'>
                             <img
                                 src="/Inusha.jpg"
