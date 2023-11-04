@@ -1,0 +1,230 @@
+body {
+    background-color: #FAFAFA;
+    perspective: 1000px;
+}
+
+form {
+    align-items: flex-start !important;
+}
+
+.contact-page-main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    position: relative;
+}
+
+
+.contact-page-details-div {
+    margin-top: 3em;
+    font-size: 3em;
+    width: 50%;
+    opacity: 0;
+    transform: rotateX(90deg);
+    animation: detailsRotateIn 1.5s forwards 0.5s;
+}
+
+@keyframes detailsRotateIn {
+    to {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
+
+.contact-page-div-title {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid #2C3E50;
+    animation:
+        typing 3s steps(40, end),
+        blink .75s step-end,
+        hideCursor 0.1s forwards 3.1s;
+    color: #2C3E50;
+    margin-bottom: 5px;
+}
+
+@keyframes typing {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+
+
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #2C3E50;
+    }
+}
+
+@keyframes hideCursor {
+    to {
+        border-right-color: transparent;
+    }
+}
+
+
+.contact-page-details {
+    font-size: 0.35em;
+    opacity: 0;
+    animation: fadeIn 1.2s forwards 1.2s;
+    margin-top: 0%;
+    color: #2C3E50;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.contact-container {
+    display: flex !important;
+    flex-direction: column !important;
+    margin-top: 5em;
+    padding: 2em;
+    margin-bottom: 3em;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #fff !important;
+    min-height: 30vh !important;
+    width: 600px !important;
+    background-color: #fff;
+    opacity: 0;
+    transform: rotateY(-90deg) scale(0.9);
+    animation: containerRotateIn 1.5s forwards 1s;
+}
+
+@keyframes containerRotateIn {
+    to {
+        opacity: 1;
+        transform: rotateY(0deg) scale(1);
+    }
+}
+
+.contact-field,
+.contact-first-name-field,
+.contact-last-name-field {
+    margin-bottom: 1em;
+    font-family: 'Merriweather' !important;
+    background-color: #eee;
+    border-radius: 5px;
+    transform: translateY(-20px);
+    animation: slideUp 1s forwards 2s;
+    color: black !important;
+}
+
+.first-last-name-div {
+    display: flex !important;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 3em;
+    transform: translateY(-20px);
+    animation: slideUp 1s forwards 1.5s;
+}
+
+@keyframes slideUp {
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.contact-title {
+    font-family: 'Merriweather';
+    transform: translateY(-20px);
+    animation: slideUp 1s forwards 1.3s;
+}
+
+.submit-button-div {
+    display: flex !important;
+    justify-content: flex-start !important;
+    text-align: right !important;
+}
+
+.submit-button {
+    margin-top: 0.4em !important;
+    width: 200px;
+    font-size: 22px !important;
+    padding: 12px !important;
+    background-color: #2C3E50 !important;
+    border-radius: 10px !important;
+    font-family: 'Merriweather' !important;
+    text-transform: none !important;
+    float: left !important;
+    color: #FFFFFF !important;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    opacity: 0.9;
+}
+
+.submit-button:hover {
+    background-color: #2F4F4F !important;
+    transform: rotateX(20deg);
+}
+
+.circles-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: #2C3E50 !important;
+    border-radius: 50%;
+    opacity: 0.9;
+    animation: pulsate 1.5s, bounce 2s 2s;
+}
+
+/* pulsate effect */
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Bounce effect */
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
+}
