@@ -42,6 +42,7 @@ form {
         hideCursor 0.1s forwards 3.1s;
     color: #2C3E50;
     margin-bottom: 5px;
+    opacity: 0.9;
 }
 
 @keyframes typing {
