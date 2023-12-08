@@ -1,4 +1,3 @@
-// src/components/ContactPage.js
 import React from 'react';
 import { Container, TextField, Button, Typography } from '@mui/material';
 import '../../static/css/contact.css'
@@ -10,7 +9,8 @@ function Contact() {
             <div className='contact-page-details-div'>
                 <h2 className='contact-page-div-title'> Contact Me</h2>
                 <div>
-                    <span className='contact-page-details'>Please fill this form or email directly at ipandey08@gmail.com</span>
+                    <span className='contact-page-details'>Please fill this form or email directly at </span><a href="mailto:ipandey08@gmail.com" className='personal-email'>ipandey08@gmail.com</a>
+
                 </div>
             </div>
             <Container className="contact-container">

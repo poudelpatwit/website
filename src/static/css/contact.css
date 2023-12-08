@@ -142,6 +142,13 @@ form {
     }
 }
 
+.personal-email {
+    text-decoration: underline;
+    font-size: 0.4em;
+    color: #2C3E50 !important;
+    font-weight: 800 !important;
+}
+
 .contact-title {
     font-family: 'Merriweather';
     transform: translateY(-20px);
